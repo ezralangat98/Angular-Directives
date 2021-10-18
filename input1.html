@@ -1,0 +1,25 @@
+<!-- //The ng-model directive stores/updates the value of the input field 
+    into/from a variable. -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Testing</title>
+        <script src="angular.min.js"></script>
+
+
+        </head>
+    <body>
+        <div ng-app ng-init="Cost = 20;Qty = 10"> 
+            <b>Invoice Calculation:</b>
+            <div>
+                Quantity: <input type="number" min="5" ng-model=Qty>
+            </div>
+            <div>
+                Costs: <input type="number" min="10" ng-model=Cost>
+            </div>
+            <div>
+               <b> Total:</b> {{Cost * Qty | currency}}
+            </div>
+        </div>
+    </body>
+</html>
