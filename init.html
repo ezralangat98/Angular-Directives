@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <script src="angular.min.js"></script>
+</head>
+<body >
+    <div ng-app ng-init="greet='Hello World!'; 
+                         amount= 100; 
+                         myArr = [100, 200]; 
+                         person = { firstName:'Steve', lastName :'Jobs'}">
+        {{amount}}      <br />
+        {{myArr[1]}}    <br />
+        {{person.firstName}} <br>
+        {{person.lastName}}
+    </div>
+</body>
+</html>
+
+<!-- In the above example, we initialized variables of string, number, array 
+and object. These variables can be used anywhere in the DOM element hierarchy 
+where it is declared e.g variables in the above example cannot be used out 
+of <div> element. -->
